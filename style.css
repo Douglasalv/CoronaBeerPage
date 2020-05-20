@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/*Global styles*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Dinpro', sans-serif ;
+    --secondary-font: 'Lora', cursive;
+    --main-color-dark: #1C2F4B;
+    --secondary-color: #FFC931;
+}
+
+
+html{
+    /*font-family: var(--secondary-font);*/
+    font-size: 10px;
+    color: var(--main-color-dark);
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Header styles*/
+
+header{
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 2rem;
+    z-index: 1000;
+}
+
+.nav{
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    width: 15em;
+}
+
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+
+}
+
+.active{
+    border-bottom: 2px solid rgb(255, 201, 49, .3);
+}
+
+.nav-link{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    border-bottom: 2px solid rgb(255, 201, 49, .3);
+}
+
+/*Hero section styles*/
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color-dark);
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    font-family: var(--main-font);
+}
+
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    box-shadow: inset 150px 150px 150px #152439, inset -150px -150px 150px #152439;
+}
+
+.container-scroll-down{
+    position: absolute;
+    background: url('images/beerBackground.jpg') center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.beer-img{
+    position: absolute;
+    z-index: 500;
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.beer-corona{
+    height: 100%;
+}
+
+.text-scroll-down{
+    position: relative;
+    height: 30%;
+    width: 30%;
+    margin: 65% 0 0 15%;
+
+}
+
+.items{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 50%;
+    width: 40%;
+    align-items: center;
+    transform: rotate(-90deg);
+    color: var(--main-color-dark);
+    font-family: var(--main-font);
+    font-weight: 900;
+}
+
+.items span{
+    font-size: 1.5em;
+}
+
+.container-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 100;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.content{
+    position: absolute;
+    padding: 4rem 0 0;
+    bottom: 50%;
+    height: 60%;
+    text-transform: uppercase;
+    transform: translateY(50%);
+}
+
+.subtitle{
+    color: var(--secondary-color);;
+    font-size: 3em;
+    padding: 0 25% 0;
+    margin-bottom: 0.4em;
+}
+
+.title{
+    color:#fff;
+    font-size: 8em;
+    padding: 0 15% 0;
+    font-weight: 1000;
+    margin-bottom: 0.2em;
+}
+
+.text{
+    color: #a5a5a5;
+    font-size: 1.3em;
+    padding: 0 25% 0;
+    font-family: var(--secondary-font);
+    letter-spacing: 2px;
+    text-transform: none;
+    line-height: 2em;
+}
+
+.follow-us{
+    display: flex;
+    position: absolute;
+    font-size: 1.2em;
+    bottom: 5em;
+    width: 100%;
+    padding: 0 0 0 25%;
+}
+
+.follow-us::before{
+    display: inline-block;
+    content: "";
+    border-top: .1em solid #fff;
+    margin-right: 1.5%;
+    width: 24em;
+    transform: translateY(50%);
+}
+
+.label{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.media-content{
+    width: 5em;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.5%;
+}
+
+.media-item{
+    color: var(--secondary-color);
+    padding: 0 1.5% 0 1.5%;
+}
+
+.media-item:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
